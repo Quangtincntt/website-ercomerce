@@ -1,6 +1,6 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import Cart from "./Cart";
 import { Page } from "./Routes";

@@ -7,14 +7,14 @@ function Products() {
   const { data } = useSelector((state) => state.products);
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="p-20">
       <h1 className="text-4xl my-12 text-center">PRODUCTS</h1>
       <div className="grid grid-cols-4 gap-8">
         {data.map((item, index) => {
-          const { id, title, price, img, btn } = item;
+          const { title, price, img, btn } = item;
           return (
             <div
               className="bg-sky-400  rounded-xl  transition-all duration-700 ease-in-out w-full hover:scale-105"

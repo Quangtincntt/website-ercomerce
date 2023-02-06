@@ -21,7 +21,7 @@ function Sales() {
   return (
     <div className="grid grid-cols-3 gap-10">
       {products.map((item, index) => {
-        const { id, title, price, img, btn } = item;
+        const { title, price, img, btn } = item;
         return (
           <div
             className="bg-sky-400  rounded-xl  transition-all duration-700 ease-in-out w-full hover:scale-105"

@@ -20,7 +20,7 @@ function Detail() {
   useEffect(() => {
     dispatch(fetchProducts());
     return () => {};
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="p-20">

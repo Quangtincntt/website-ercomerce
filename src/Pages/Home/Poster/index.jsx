@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 import axios from "axios";
 
 function Poster() {
@@ -30,7 +30,6 @@ function Poster() {
         slidesPerGroup={3}
         loop={true}
         loopFillGroupWithBlank={true}
-        pagination={true}
         navigation={true}
         modules={[Navigation]}
       >
@@ -62,10 +61,13 @@ function Poster() {
                         </div>
                       </div>
                       <div className="grid items-center justify-items-start px-4">
-                        <p className="text-sm text-justify lg:text-xs">{val.text}</p>
+                        <p className="text-sm text-justify lg:text-xs">
+                          {val.text}
+                        </p>
                       </div>
                       <div className="flex items-center justify-center px-4 w-full">
                         <a
+                          rel="noopener noreferrer"
                           href={val.url}
                           target="_blank"
                           role={"button"}

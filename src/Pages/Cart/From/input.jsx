@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useSelector, useDispatch } from "react-redux";
-import { setCartItem, setConfirm } from "../../../Redux/confirmationSlice";
+import { setConfirm } from "../../../Redux/confirmationSlice";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import Modal from "./modal";
@@ -23,7 +23,7 @@ function Input() {
       );
     }
 
-    if (cartItems.length == 0) {
+    if (cartItems.length === 0) {
       return (
         <button
           type="submit"
