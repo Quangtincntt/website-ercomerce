@@ -64,7 +64,7 @@ function Modal() {
                   <div className="relative bg-black text-white text-center p-4 my-4">
                     <a
                       className="absolute top-1 right-0 left-0 bottom-0"
-                      href="http://localhost:3000"
+                      href="https://website-ercomerce.vercel.app/"
                     >
                       Single ticket confirmation
                     </a>
