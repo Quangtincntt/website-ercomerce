@@ -5,7 +5,7 @@ function Item({ items }) {
         const { img, title, text, cartQuantity, price } = item;
         return (
           <div key={index} className="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
-            <div className="flex rounded-lg bg-white sm:flex-row">
+            <div className="flex rounded-lg bg-white md:flex-col">
               <img
                 className="m-2 rounded-md w-64 object-cover object-center"
                 src={img}

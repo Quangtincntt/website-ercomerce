@@ -10,9 +10,9 @@ function Products() {
   }, [dispatch]);
 
   return (
-    <div className="p-20">
+    <div className="px-5">
       <h1 className="text-4xl my-12 text-center">PRODUCTS</h1>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-4 gap-8 md:grid-cols-2">
         {data.map((item, index) => {
           const { title, price, img, btn } = item;
           return (

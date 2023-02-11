@@ -19,7 +19,7 @@ function Sales() {
   const products = result.slice(5, 8);
 
   return (
-    <div className="grid grid-cols-3 gap-10">
+    <div className="grid grid-cols-3 gap-10 md:grid-cols-1">
       {products.map((item, index) => {
         const { title, price, img, btn } = item;
         return (

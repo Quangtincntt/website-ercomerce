@@ -13,7 +13,7 @@ function CartItem() {
         const { img, title, text, cartQuantity, price } = item;
         return (
           <div key={index} className="flex justify-around mb-10 ">
-            <img className="w-48" src={img} alt="" />
+            <img className="w-48 md:w-36" src={img} alt="" />
             <div className="text-white">
               <h1 className="">{title}</h1>
               <p className="my-2">{text}</p>

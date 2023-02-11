@@ -37,45 +37,19 @@ function Poster() {
           return (
             <div key={index}>
               {item.news.map((val, index) => {
+                const { img, like, time, by, text, url, btn } = val;
                 return (
                   <SwiperSlide key={index} className="">
-                    <div className="relative grid items-center gap-4 pb-2 rounded-lg shadow shadow-slate-200 ring-1 ring-slate-200">
-                      <div className="flex items-center justify-center">
-                        <img
-                          src={val.img}
-                          alt={`img/story/${index}`}
-                          className="w-full h-auto object-cover shadow-md shadow-slate-200 rounded-tl-lg rounded-tr-lg"
-                        />
-                      </div>
-                      <div className="flex items-center justify-between w-full px-4">
-                        <div className="flex items-center gap-0.5">
-                          <span className="text-xs font-bold">{val.like}</span>
-                        </div>
-                        <div className="flex items-center gap-0.5">
-                          <span className="text-xs font-bold">{val.time}</span>
-                        </div>
-                        <div className="flex items-center gap-0.5">
-                          <span className="text-xs font-bold text-blue-600">
-                            {val.by}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="grid items-center justify-items-start px-4">
-                        <p className="text-sm text-justify lg:text-xs">
-                          {val.text}
-                        </p>
-                      </div>
-                      <div className="flex items-center justify-center px-4 w-full">
-                        <a
-                          rel="noopener noreferrer"
-                          href={val.url}
-                          target="_blank"
-                          role={"button"}
-                          className="w-full bg-gradient-to-b from-slate-900 to-black shadow-md shadow-black text-center text-slate-100 py-1.5 button-theme"
-                        >
-                          {val.btn}
-                        </a>
-                      </div>
+                    <div className="bg-black p-2" key={index}>
+                      <img src={img} alt="" />
+                      <p className="my-4 text-white">{by}</p>
+                      <p className="text-white my-2">{like}</p>
+                      <p className="text-white">{time}</p>
+                      <a href="https://www.nike.com/vn/">
+                        <button className="bg-blue-300 my-4 text-white p-2">
+                          {btn}
+                        </button>
+                      </a>
                     </div>
                   </SwiperSlide>
                 );

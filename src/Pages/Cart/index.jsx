@@ -17,7 +17,7 @@ function Cart() {
   return (
     <>
       <RoutesCart />
-      <div className="mb-10 flex justify-around">
+      <div className="mb-10 flex justify-around md:flex-col">
         <div className="px-4 pt-8">
           <p className="text-xl font-medium">Order Summary</p>
           <p className="text-gray-400">
