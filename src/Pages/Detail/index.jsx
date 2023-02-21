@@ -27,7 +27,7 @@ function Detail() {
       {detail.map((item, index) => {
         const { id, title, price, img, text } = item;
         return (
-          <div className="flex md:justify-around flex-col" key={index}>
+          <div className="flex justify-around md:flex-col" key={index}>
             <div>
               <img className="w-96" src={img} alt="" />
             </div>
