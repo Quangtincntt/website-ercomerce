@@ -1,4 +1,4 @@
-# Websiet E-commerce
+# Website E-commerce
 
 ### `npm start`
 
