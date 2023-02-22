@@ -15,6 +15,7 @@ Contact me ==> <a href="https://quangtin-portfolio.vercel.app/">Portfolio <a hre
 
 # Iredient
   <ul>
+    <li> Get data from json sever api on Vercel <a href="https://json-sever-api.vercel.app/" /> Here
     <li> Opimize actions and functions using Redux Toolkit
     <li> Product database to fetch Json Server API when using Axios
     <li> Source code management GitHub pages via GitHub Actions, Deployed Vercel
